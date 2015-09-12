@@ -10,6 +10,7 @@ Source0:	http://code.coreboot.org/p/seabios/downloads/get/bios.bin-%{version}.gz
 # Source0-md5:	0d224123289f68db9087873dd61e9c18
 URL:		http://seabios.org/
 Provides:	seabios = %{version}-%{release}
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,6 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/seabios
 
 gunzip -c %{SOURCE0} > $RPM_BUILD_ROOT%{_datadir}/seabios/bios.bin
+touch -r %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/seabios/bios.bin
 
 %clean
 rm -rf $RPM_BUILD_ROOT
