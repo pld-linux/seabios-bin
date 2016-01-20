@@ -6,6 +6,7 @@ Version:	1.9.0
 Release:	0.1
 License:	LGPL v3
 Group:		Applications/System
+#Source0Download: http://code.coreboot.org/p/seabios/downloads/
 Source0:	http://code.coreboot.org/p/seabios/downloads/get/bios.bin-%{version}.gz
 # Source0-md5:	e80b226d25d1c7341cdc271a53ebdd20
 URL:		http://seabios.org/
