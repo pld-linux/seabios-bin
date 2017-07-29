@@ -2,14 +2,14 @@
 Summary:	Open source implementation of a 16-bit x86 BIOS (binary release)
 Summary(pl.UTF-8):	Implementacja 16-bitowego BIOS-u x86 o otwartych źródłach (wydanie binarne)
 Name:		seabios-bin
-Version:	1.9.0
+Version:	1.10.0
 Release:	0.1
 License:	LGPL v3
 Group:		Applications/System
-#Source0Download: http://code.coreboot.org/p/seabios/downloads/
-Source0:	http://code.coreboot.org/p/seabios/downloads/get/bios.bin-%{version}.gz
-# Source0-md5:	e80b226d25d1c7341cdc271a53ebdd20
-URL:		http://seabios.org/
+#Source0Download: https://code.coreboot.org/p/seabios/downloads/
+Source0:	https://code.coreboot.org/p/seabios/downloads/get/bios.bin-%{version}.gz
+# Source0-md5:	2203867a5cfd748e7c472cd9751848d3
+URL:		https://www.seabios.org/SeaBIOS
 Provides:	seabios = %{version}-%{release}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
